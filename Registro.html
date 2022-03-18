@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/EstiloRegister.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class='contenedorRegistro'>
+        <div class='header'>
+          <h2 class='animation a1'>Registro</h2>
+        </div>
+
+        <div class="formR a2">
+          <input id="cedulaTxt" type="number" class='formR-field animation a3' placeholder="Ingresa tu cedula" required />
+          <input id="nombreTxt" type="text" class='formR-field animation a3' placeholder="Ingresa tu nombre" required />
+          <input id="apellidoText" type="text" class='formR-field animation a3' placeholder="Ingresa tu apellido" required/>
+          <input id="emailTxt" type="email" class='formR-field animation a3' placeholder="Ingresa tu email" required/>
+          <input id="passwordTxt" type="password" class='formR-field animation a4' placeholder="Ingresa tu password" required/>
+          <input id="repetirPassword" type="password" class='formR-field animation a4' placeholder="Repité tu password"  required/>
+          <input id="SaldoTxt" type ="text" class='formR-field animation a4' placeholder='Ingrese un saldo inicial' required/>
+
+         
+
+          <button class='animation a6' onClick="registrarUsuarios()">Registrarse</button>
+          </div>
+        </div>
+</body>
+<script src="./Services/Registro.js"></script>
+
+</html>

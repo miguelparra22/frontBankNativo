@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Assets/EstiloPrincipal.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>Principal</title>
+</head>
+
+<body>
+    <div>
+        <div class='nav'>
+            <input type="checkbox" id="nav-check" />
+            <div class='nav-header'>
+                <div class='nav-title'>
+                    MonkeyBank
+
+                    <img src='./Assets/logo.png' width="30" height="30" alt="logo" />
+                   
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <div class="nav-links">
+
+                <a href="#" target="_blank" onclick="irConsignaciones()">Consignaciones</a>
+                <a href="#" target="_blank" onclick="irRetiros()">Retiros</a>
+                <a href="#" target="_blank" onclick="salir()">Salir</a>
+            </div>
+        </div>
+
+        <section>
+
+            <h1>Bienvenido</h1>
+            <hr>
+            <h2 id="Saldo">
+            </h2>
+            
+    <script src="./Services/Usuario.js"></script>
+  
+    <script>
+
+        window.onload = function () {
+            consultarIdporEmail();
+        };
+
+    </script>
+</body>
+
+</html>
